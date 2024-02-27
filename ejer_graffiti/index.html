@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https:cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-row">
+        <section class="w-1/3 h-screen bg-orange-200 flex flex-col justify-center items-center">
+            <h2 class="pb-3">Section form</h2>
+
+            <form class="w-11/12 h-5/6 bg-white border rounded-md border-zinc-800 flex flex-col items-center justify-around" id="formulario">
+                <div class="flex flex-col gap-1.5 items-start">
+                    <label for="input_text1">Ingrese un texto</label>
+                    <input class="border border-black mb-3" type="text" name="input_text1" id="input_text1">
+
+                    <label for="elegir_color">Elija un color</label>
+                    <input type="color" id="elegir_color" name="elegir_color">
+                </div>
+
+                <input id="send" class="bg-yellow-400 border-2 border-black p-1 mb-2 font-bold text-3xl " type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="w-2/3 h-screen bg-slate-600 flex flex-col justify-center items-center">
+            <h2 class="pb-3">Section Wall</h2>
+            <div class="w-11/12 h-5/6 bg-white border-2 rounded-md border-black" id="wall">
+                <h3>Div #wall</h3>
+            </div>
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
